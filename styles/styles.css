@@ -1,21 +1,41 @@
+nav {
+    background-color: steelblue;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
 main {
-    max-width: 840;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #333333;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid #cccccc;
+    padding: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 aside {
-
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 /0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-    /* Add your styles for the aside element here */
+    width: 250px;
+    margin: 15px;
+    border: 1px solid steelblue;
+    padding: 15px;
+    background-color: #f0f5f9;
+    color: #333333;
 }
 
-image aside {
-
+aside img {
     width: 200px;
     height: auto;
 }
@@ -25,8 +45,7 @@ p {
 }
 
 footer {
-    margin-top: 40px;
-    border-top: 1px solid #333;
+    margin-top: 30px;
+    border-top: 2px solid steelblue;
     text-align: center;
-    padding: 10px 0;
 }
