@@ -93,3 +93,12 @@ h1 {
     width: 30px;
     height: auto;
 }
+
+/* Example usage in rafting.css */
+nav {
+    background-color: var(--secondary-color);
+}
+
+nav a:hover {
+    color: var(--accent1-color);
+}
