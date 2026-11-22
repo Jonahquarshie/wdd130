@@ -1,104 +1,190 @@
-/* 1. CSS Variables */
 :root {
-    --primary-color: #0b3c5d;
-    --secondary-color: #328cc1;
-    --accent1-color: #d9b310;
-    --accent2-color: #1d2731;
-    --heading-font: "Georgia", "Times New Roman", serif;
-    --body-font: "Arial", "Helvetica", sans-serif;
+    --primary-color: #1b4965;
+    --secondary-color: #62b6cb;
+    --accent1-color: #bee9e8;
+    --accent2-color: #cae9ff;
+    --heading-font: 'Georgia', serif;
+    --body-font: 'Arial', sans-serif;
 }
 
-/* 2. Universal Box-Model Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* 3. Body Styling */
 body {
     font-family: var(--body-font);
-    color: var(--accent2-color);
-}
-
-/* 4. Page Width & Centering */
-header,
-main,
-footer {
-    width: 840px;
+    color: #222;
+    max-width: 960px;
     margin: 0 auto;
 }
 
-/* 5. Headings */
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+/* Header: CSS Grid for Logo + Nav */
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
 }
 
-/* 6. Consistent Spacing */
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
+header img {
+    width: 100px;
+    height: auto;
 }
 
-/* 7. Remove Social Media Link Underlines */
-.socialmedia a {
+/* Nav: CSS Flex for horizontal links */
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav a {
+    color: #ffffff;
     text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
 }
 
-/* 8. Hero Container & Overlays */
+header nav a:hover {
+    background-color: var(--secondary-color);
+    color: #000;
+}
+
+/* Hero Section */
 .hero {
     position: relative;
+    margin-bottom: 2rem;
 }
 
-.hero img {
+.hero > img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16px;
+    padding: 1rem;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent2-color);
-    color: #ffffff;
+    background-color: rgba(27, 73, 101, 0.85);
+    color: #fff;
+    font-family: var(--heading-font);
 }
 
 .hero article {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background-color: rgba(11, 60, 93, 0.85);
-    color: #ffffff;
+    bottom: 25px;
+    left: 5%;
+    right: 5%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 4px;
 }
 
 .hero article img {
     float: right;
-    width: 125px;
-    margin-left: 16px;
-    border: 2px solid #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 140px;
+    margin-left: 1rem;
+    border-radius: 4px;
 }
 
-.socialmedia img {
-    width: 30px;
+/* History Section: 3-column wireframe layout (Text - Image - Text) */
+.history {
+    padding: 1.5rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.history h2 {
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 250px 1fr;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.history-content img {
+    width: 100%;
     height: auto;
+    border-radius: 6px;
 }
 
-/* Example usage in rafting.css */
-nav {
-    background-color: var(--secondary-color);
+/* Adventures Section: 5 figures spanning horizontally */
+.adventures {
+    padding: 1.5rem 1rem;
+    margin-bottom: 2rem;
 }
 
-nav a:hover {
-    color: var(--accent1-color);
+.adventures h2 {
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.adventure-gallery figure {
+    margin: 0;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Footer: Text centered/left, 3 social icons horizontally on the right */
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer .socialmedia {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: flex-end;
+}
+
+footer .socialmedia a {
+    text-decoration: none;
+}
+
+footer .socialmedia img {
+    width: 32px;
+    height: 32px;
+    display: block;
 }
