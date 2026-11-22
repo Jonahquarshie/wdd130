@@ -3,6 +3,8 @@
     --secondary-color: #62b6cb;
     --accent1-color: #bee9e8;
     --accent2-color: #cae9ff;
+    --text-dark: #111111;
+    --text-light: #ffffff;
     --heading-font: 'Georgia', serif;
     --body-font: 'Arial', sans-serif;
 }
@@ -15,7 +17,7 @@
 
 body {
     font-family: var(--body-font);
-    color: #222;
+    color: var(--text-dark);
     max-width: 960px;
     margin: 0 auto;
 }
@@ -42,7 +44,7 @@ header nav {
 }
 
 header nav a {
-    color: #ffffff;
+    color: var(--text-light);
     text-decoration: none;
     font-weight: bold;
     padding: 0.5rem 1rem;
@@ -97,8 +99,10 @@ header nav a:hover {
 
 /* History Section: 3-column wireframe layout (Text - Image - Text) */
 .history {
+    background-color: var(--accent1-color);
     padding: 1.5rem 1rem;
     margin-bottom: 2rem;
+    border-radius: 4px;
 }
 
 .history h2 {
@@ -123,8 +127,10 @@ header nav a:hover {
 
 /* Adventures Section: 5 figures spanning horizontally */
 .adventures {
+    background-color: var(--accent2-color);
     padding: 1.5rem 1rem;
     margin-bottom: 2rem;
+    border-radius: 4px;
 }
 
 .adventures h2 {
@@ -165,7 +171,7 @@ footer {
     grid-template-columns: 1fr auto;
     align-items: center;
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--text-light);
     padding: 1rem 2rem;
 }
 
