@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | White Water Rafting Adventures</title>
+    <meta name="description" content="Get in touch with White Water Rafting Adventures for trip reservations, general inquiries, directions, and customer support.">
+    <meta name="author" content="Jonah Quarshie">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="White Water Rafting Co. Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main class="contact-main">
+        <h1>Contact Us</h1>
+
+        <!-- Company Info & Embedded Google Map -->
+        <section class="contact-info-grid">
+            <div class="company-details">
+                <h2>Company Information</h2>
+                <p><strong>Address:</strong> 123 River Rapids Way, Moab, UT 84532</p>
+                <p><strong>Phone:</strong> (+233) 557778080</p>
+                <p><strong>Email:</strong> info@wwraftingadventures.com</p>
+            </div>
+
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63460.34986451557!2d-0.0840227!3d6.227842830125075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgh!4v1795851240526!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <!-- Remember: Remove the inline style="border:0;" attribute from the iframe -->
+                </iframe>
+            </div>
+        </section>
+
+        <section class="history">
+            <h2>History</h2>
+            <div class="history-content">
+                <p>Founded in 1998 by a small group of river enthusiasts, White Water Rafting Co. started with two rafts and a passion for the outdoors. Over the decades, we have guided thousands of adventurers down the region's most exciting rapids. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <img src="images/mhistory.jpg" alt="Historic rafting expedition">
+                <p>Today, we operate across five premier river corridors while maintaining our commitment to river conservation, safety excellence, and welcoming hospitality on every single trip.</p>
+            </div>
+        </section>
+
+        <section class="employees-section">
+            <h2>Meet Our Team</h2>
+            <div class="employee-gallery">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Sarah Jenkins, Lead River Guide">
+                    <figcaption>Sarah Jenkins — Lead River Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Marcus Vance, Reservations Manager">
+                    <figcaption>Marcus Vance — Reservations Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Elena Morales, Safety Director">
+                    <figcaption>Elena Morales — Safety &amp; Operations Director</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="fullname">Your Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <fieldset class="form-group radio-group">
+                    <legend>Purpose of Message:</legend>
+                    <label for="purpose-general">
+                        <input type="radio" id="purpose-general" name="purpose" value="General Inquiry" required>
+                        General Inquiry
+                    </label>
+                    <label for="purpose-reservation">
+                        <input type="radio" id="purpose-reservation" name="purpose" value="Reservation Question">
+                        Reservation Question
+                    </label>
+                    <label for="purpose-website">
+                        <input type="radio" id="purpose-website" name="purpose" value="Website Suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">Send My Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 White Water Rafting Adventures | Jonah Quarshie</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/youtube.png" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="images/instagram-icon.png" alt="Instagram"></a>
+        </nav>
+    </footer>
+</body>
+
+</html>
